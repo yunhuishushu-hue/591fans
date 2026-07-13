@@ -1,0 +1,30 @@
+<!DOCTYPE html><html lang='zh-CN'><head><meta charset='UTF-8'><meta name='viewport' content='width=device-width,initial-scale=1'>
+<title>591粉丝网2.0</title>
+<style>
+body{margin:0;font-family:Arial;background:#eef3ff}
+header{background:#4b78ff;color:#fff;padding:20px;text-align:center}
+.logo{width:110px;height:110px;border-radius:50%}
+nav{display:flex;gap:10px;justify-content:center;background:#fff;padding:10px;position:sticky;top:0}
+nav a{text-decoration:none;color:#4b78ff;font-weight:bold}
+.wrap{max-width:900px;margin:auto;padding:16px}
+.card{background:#fff;border-radius:12px;padding:18px;margin:16px 0;box-shadow:0 2px 8px #ccc}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}
+.thumb{background:#d8d8d8;height:140px;border-radius:8px;display:flex;align-items:center;justify-content:center}
+input,textarea{width:100%;padding:8px;margin:6px 0}
+button{padding:10px 16px}
+</style></head><body>
+<header><img src='591.jpg' class='logo'><h1>591粉丝网 2.0</h1><p>粉丝交流 · 视频展示</p></header>
+<nav><a href='#home'>首页</a><a href='#videos'>视频</a><a href='#upload'>上传</a><a href='#about'>关于</a></nav>
+<div class='wrap'>
+<div class='card' id='home'><h2>欢迎</h2><p>欢迎来到591粉丝网。本页面为演示版。</p></div>
+<div class='card' id='videos'><h2>视频专区</h2><div class='grid'>
+<div><div class='thumb'>视频1</div></div>
+<div><div class='thumb'>视频2</div></div>
+<div><div class='thumb'>视频3</div></div>
+</div></div>
+<div class='card' id='upload'><h2>上传视频（演示）</h2>
+<input type='file' accept='video/*'><button onclick="alert('这是演示界面，真正上传需要服务器支持。')">上传</button>
+</div>
+<div class='card'><h2>留言板</h2><textarea placeholder='写点什么...'></textarea><button onclick="alert('演示版，不会保存留言。')">发表</button></div>
+<div class='card' id='about'><h2>关于</h2><p>591粉丝网 2.0 演示版。</p></div>
+</div></body></html>
